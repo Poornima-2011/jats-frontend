@@ -1,0 +1,316 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Inter", sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 2px solid #0f766e;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: 22px;
+  color: #0f172a;
+  margin: 0;
+  flex: 1;
+}
+
+.session-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.session-info button {
+  background: transparent;
+  border: 1px solid #0f766e;
+  color: #0f766e;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.session-info button:hover {
+  background: #0f766e;
+  color: white;
+}
+
+/* =========================
+   AUTH SECTION
+   ========================= */
+
+.auth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+  font-size: 16px;
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* =========================
+   FORM ELEMENTS
+   ========================= */
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0f766e;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  cursor: pointer;
+  background: #0f766e;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+/* =========================
+   MESSAGES
+   ========================= */
+
+.error-text {
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.info-text {
+  color: #0f766e;
+  font-size: 13px;
+}
+
+/* =========================
+   VIEWS
+   ========================= */
+
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+/* =========================
+   FILTER & JOB FORM
+   ========================= */
+
+.filter-bar,
+.job-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.filter-bar input {
+  flex: 1;
+  min-width: 140px;
+}
+
+.job-form {
+  flex-direction: column;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.card h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* =========================
+   TABLE
+   ========================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+/* =========================
+   STATUS BADGES
+   ========================= */
+
+.badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-applied {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.badge-shortlisted {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+.badge-hired {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-open {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-closed {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 700px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-header h1 {
+    font-size: 20px;
+  }
+
+  .session-info {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .auth-section {
+    grid-template-columns: 1fr;
+  }
+
+  .app {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
