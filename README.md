@@ -231,10 +231,9 @@ candidate → post job → apply → update status.
 
 ## 👤 Author
 
-**Your Name**
+
 POORNIMA
 
 
 
-This project is open source and available under the [MIT License](LICENSE).
 
