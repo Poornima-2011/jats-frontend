@@ -27,10 +27,6 @@ advanced tooling, so every part of it is simple to explain in an interview.
 
 ---
 
-## 🚀 Live Demo / Screenshots
-
-> _Add screenshots or a GIF walkthrough here once your UI is running, e.g._
-> `![Job board screenshot](screenshots/job-board.png)`
 
 ---
 
@@ -171,7 +167,7 @@ cd backend
 mvn clean install
 mvn spring-boot:run
 ```
-Runs at `http://localhost:8080`.
+Runs at `http://localhost:8089`.
 
 ### 2. Frontend (React)
 ```bash
@@ -215,7 +211,8 @@ candidate → post job → apply → update status.
   "message": "You have already applied to this job"
 }
 ```
-
+## Backend Source Code
+https://github.com/Poornima-2011/Job-Application-Tracking-System-Backend
 ---
 
 ## 🔮 Future Improvements
